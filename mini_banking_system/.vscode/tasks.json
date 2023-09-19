@@ -1,0 +1,27 @@
+
+    {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "type": "cppbuild",
+                "label": "gcc_embedded",
+                "command": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe",
+                "args": [
+                    "-fdiagnostics-color=always",
+                    "-g",
+                    "${workspaceFolder}\\mini_bank_system\\*.c",
+                    "-o",
+                    "${fileDirname}\\mini_bank.exe",
+                    ""
+                ],
+                "options": {
+                    "cwd": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin"
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "group": "build",
+                "detail": "compiler: C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe"
+            }
+        ]
+}

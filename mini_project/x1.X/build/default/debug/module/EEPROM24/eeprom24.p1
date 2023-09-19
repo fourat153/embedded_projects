@@ -1,0 +1,62 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[v F428 `(v ~T0 @X0 0 tf ]
+"56 module/EEPROM24/../../mcc_generated_files/examples/i2c_master_example.h
+[; ;module/EEPROM24/../../mcc_generated_files/examples/i2c_master_example.h: 56: void I2C_Write1ByteRegister(i2c_address_t address, uint8_t reg, uint8_t data);
+[v _I2C_Write1ByteRegister `(v ~T0 @X0 0 ef3`uc`uc`uc ]
+"54
+[; ;module/EEPROM24/../../mcc_generated_files/examples/i2c_master_example.h: 54: uint8_t I2C_Read1ByteRegister(i2c_address_t address, uint8_t reg);
+[v _I2C_Read1ByteRegister `(uc ~T0 @X0 0 ef2`uc`uc ]
+"213 module/EEPROM24/../../mcc_generated_files/examples/../i2c_master.h
+[; ;module/EEPROM24/../../mcc_generated_files/examples/../i2c_master.h: 213: void (*MSSP_InterruptHandler)(void);
+[v _MSSP_InterruptHandler `*F428 ~T0 @X0 1 e ]
+"4 module/EEPROM24/eeprom24.c
+[; ;module/EEPROM24/eeprom24.c: 4: void eeprom_24_writebyte (i2c_address_t eeprom_add , i2c_address_t byte_address , uint8_t Data )
+[v _eeprom_24_writebyte `(v ~T0 @X0 1 ef3`uc`uc`uc ]
+"5
+[; ;module/EEPROM24/eeprom24.c: 5: {
+{
+[e :U _eeprom_24_writebyte ]
+"4
+[; ;module/EEPROM24/eeprom24.c: 4: void eeprom_24_writebyte (i2c_address_t eeprom_add , i2c_address_t byte_address , uint8_t Data )
+[v _eeprom_add `uc ~T0 @X0 1 r1 ]
+[v _byte_address `uc ~T0 @X0 1 r2 ]
+[v _Data `uc ~T0 @X0 1 r3 ]
+"5
+[; ;module/EEPROM24/eeprom24.c: 5: {
+[f ]
+"7
+[; ;module/EEPROM24/eeprom24.c: 7:     I2C_Write1ByteRegister(eeprom_add , byte_address , Data );
+[e ( _I2C_Write1ByteRegister (3 , , _eeprom_add _byte_address _Data ]
+"8
+[; ;module/EEPROM24/eeprom24.c: 8: }
+[e :UE 3 ]
+}
+"9
+[; ;module/EEPROM24/eeprom24.c: 9: uint8_t eeprom_24_readbyte (i2c_address_t eeprom_add , i2c_address_t byte_address )
+[v _eeprom_24_readbyte `(uc ~T0 @X0 1 ef2`uc`uc ]
+"10
+[; ;module/EEPROM24/eeprom24.c: 10: {
+{
+[e :U _eeprom_24_readbyte ]
+"9
+[; ;module/EEPROM24/eeprom24.c: 9: uint8_t eeprom_24_readbyte (i2c_address_t eeprom_add , i2c_address_t byte_address )
+[v _eeprom_add `uc ~T0 @X0 1 r1 ]
+[v _byte_address `uc ~T0 @X0 1 r2 ]
+"10
+[; ;module/EEPROM24/eeprom24.c: 10: {
+[f ]
+"11
+[; ;module/EEPROM24/eeprom24.c: 11:     uint8_t value = 0 ;
+[v _value `uc ~T0 @X0 1 a ]
+[e = _value -> -> 0 `i `uc ]
+"13
+[; ;module/EEPROM24/eeprom24.c: 13:     value = I2C_Read1ByteRegister(eeprom_add , byte_address);
+[e = _value ( _I2C_Read1ByteRegister (2 , _eeprom_add _byte_address ]
+"14
+[; ;module/EEPROM24/eeprom24.c: 14:     return value ;
+[e ) _value ]
+[e $UE 4  ]
+"15
+[; ;module/EEPROM24/eeprom24.c: 15: }
+[e :UE 4 ]
+}
