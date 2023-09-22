@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/mm77/Desktop/6502",
-      "program": "c:/Users/mm77/Desktop/6502/build/Debug/outDebug",
+      "cwd": "c:/Users/mm77/Desktop/embedded_projects/emulator_6502CPU",
+      "program": "c:/Users/mm77/Desktop/embedded_projects/emulator_6502CPU/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
