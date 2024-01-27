@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=mcc_generated_files/examples/i2c_master_example.c mcc_generated_files/mcc.c mcc_generated_files/device_config.c mcc_generated_files/pin_manager.c mcc_generated_files/memory.c mcc_generated_files/eusart.c mcc_generated_files/i2c_master.c mcc_generated_files/interrupt_manager.c main.c real_time_module/real_time_clock.c
+SOURCEFILES_QUOTED_IF_SPACED=mcc_generated_files/examples/i2c_master_example.c mcc_generated_files/mcc.c mcc_generated_files/device_config.c mcc_generated_files/pin_manager.c mcc_generated_files/memory.c mcc_generated_files/eusart.c mcc_generated_files/i2c_master.c mcc_generated_files/interrupt_manager.c main.c ECUL/real_time_module/real_time_clock.c ECUL/uart_logging/uart_logging.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mcc_generated_files/examples/i2c_master_example.p1 ${OBJECTDIR}/mcc_generated_files/mcc.p1 ${OBJECTDIR}/mcc_generated_files/device_config.p1 ${OBJECTDIR}/mcc_generated_files/pin_manager.p1 ${OBJECTDIR}/mcc_generated_files/memory.p1 ${OBJECTDIR}/mcc_generated_files/eusart.p1 ${OBJECTDIR}/mcc_generated_files/i2c_master.p1 ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/real_time_module/real_time_clock.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/mcc_generated_files/examples/i2c_master_example.p1.d ${OBJECTDIR}/mcc_generated_files/mcc.p1.d ${OBJECTDIR}/mcc_generated_files/device_config.p1.d ${OBJECTDIR}/mcc_generated_files/pin_manager.p1.d ${OBJECTDIR}/mcc_generated_files/memory.p1.d ${OBJECTDIR}/mcc_generated_files/eusart.p1.d ${OBJECTDIR}/mcc_generated_files/i2c_master.p1.d ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1.d ${OBJECTDIR}/main.p1.d ${OBJECTDIR}/real_time_module/real_time_clock.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mcc_generated_files/examples/i2c_master_example.p1 ${OBJECTDIR}/mcc_generated_files/mcc.p1 ${OBJECTDIR}/mcc_generated_files/device_config.p1 ${OBJECTDIR}/mcc_generated_files/pin_manager.p1 ${OBJECTDIR}/mcc_generated_files/memory.p1 ${OBJECTDIR}/mcc_generated_files/eusart.p1 ${OBJECTDIR}/mcc_generated_files/i2c_master.p1 ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1 ${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/mcc_generated_files/examples/i2c_master_example.p1.d ${OBJECTDIR}/mcc_generated_files/mcc.p1.d ${OBJECTDIR}/mcc_generated_files/device_config.p1.d ${OBJECTDIR}/mcc_generated_files/pin_manager.p1.d ${OBJECTDIR}/mcc_generated_files/memory.p1.d ${OBJECTDIR}/mcc_generated_files/eusart.p1.d ${OBJECTDIR}/mcc_generated_files/i2c_master.p1.d ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1.d ${OBJECTDIR}/main.p1.d ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1.d ${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/mcc_generated_files/examples/i2c_master_example.p1 ${OBJECTDIR}/mcc_generated_files/mcc.p1 ${OBJECTDIR}/mcc_generated_files/device_config.p1 ${OBJECTDIR}/mcc_generated_files/pin_manager.p1 ${OBJECTDIR}/mcc_generated_files/memory.p1 ${OBJECTDIR}/mcc_generated_files/eusart.p1 ${OBJECTDIR}/mcc_generated_files/i2c_master.p1 ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/real_time_module/real_time_clock.p1
+OBJECTFILES=${OBJECTDIR}/mcc_generated_files/examples/i2c_master_example.p1 ${OBJECTDIR}/mcc_generated_files/mcc.p1 ${OBJECTDIR}/mcc_generated_files/device_config.p1 ${OBJECTDIR}/mcc_generated_files/pin_manager.p1 ${OBJECTDIR}/mcc_generated_files/memory.p1 ${OBJECTDIR}/mcc_generated_files/eusart.p1 ${OBJECTDIR}/mcc_generated_files/i2c_master.p1 ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1 ${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1
 
 # Source Files
-SOURCEFILES=mcc_generated_files/examples/i2c_master_example.c mcc_generated_files/mcc.c mcc_generated_files/device_config.c mcc_generated_files/pin_manager.c mcc_generated_files/memory.c mcc_generated_files/eusart.c mcc_generated_files/i2c_master.c mcc_generated_files/interrupt_manager.c main.c real_time_module/real_time_clock.c
+SOURCEFILES=mcc_generated_files/examples/i2c_master_example.c mcc_generated_files/mcc.c mcc_generated_files/device_config.c mcc_generated_files/pin_manager.c mcc_generated_files/memory.c mcc_generated_files/eusart.c mcc_generated_files/i2c_master.c mcc_generated_files/interrupt_manager.c main.c ECUL/real_time_module/real_time_clock.c ECUL/uart_logging/uart_logging.c
 
 
 
@@ -160,13 +160,21 @@ ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/main.d ${OBJECTDIR}/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/real_time_module/real_time_clock.p1: real_time_module/real_time_clock.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/real_time_module" 
-	@${RM} ${OBJECTDIR}/real_time_module/real_time_clock.p1.d 
-	@${RM} ${OBJECTDIR}/real_time_module/real_time_clock.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gcoff -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/real_time_module/real_time_clock.p1 real_time_module/real_time_clock.c 
-	@-${MV} ${OBJECTDIR}/real_time_module/real_time_clock.d ${OBJECTDIR}/real_time_module/real_time_clock.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/real_time_module/real_time_clock.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1: ECUL/real_time_module/real_time_clock.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/ECUL/real_time_module" 
+	@${RM} ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1.d 
+	@${RM} ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gcoff -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1 ECUL/real_time_module/real_time_clock.c 
+	@-${MV} ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.d ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1: ECUL/uart_logging/uart_logging.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/ECUL/uart_logging" 
+	@${RM} ${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1.d 
+	@${RM} ${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gcoff -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1 ECUL/uart_logging/uart_logging.c 
+	@-${MV} ${OBJECTDIR}/ECUL/uart_logging/uart_logging.d ${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 else
 ${OBJECTDIR}/mcc_generated_files/examples/i2c_master_example.p1: mcc_generated_files/examples/i2c_master_example.c  nbproject/Makefile-${CND_CONF}.mk 
@@ -241,13 +249,21 @@ ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/main.d ${OBJECTDIR}/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/real_time_module/real_time_clock.p1: real_time_module/real_time_clock.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/real_time_module" 
-	@${RM} ${OBJECTDIR}/real_time_module/real_time_clock.p1.d 
-	@${RM} ${OBJECTDIR}/real_time_module/real_time_clock.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gcoff -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/real_time_module/real_time_clock.p1 real_time_module/real_time_clock.c 
-	@-${MV} ${OBJECTDIR}/real_time_module/real_time_clock.d ${OBJECTDIR}/real_time_module/real_time_clock.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/real_time_module/real_time_clock.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1: ECUL/real_time_module/real_time_clock.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/ECUL/real_time_module" 
+	@${RM} ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1.d 
+	@${RM} ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gcoff -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1 ECUL/real_time_module/real_time_clock.c 
+	@-${MV} ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.d ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/ECUL/real_time_module/real_time_clock.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1: ECUL/uart_logging/uart_logging.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/ECUL/uart_logging" 
+	@${RM} ${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1.d 
+	@${RM} ${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gcoff -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1 ECUL/uart_logging/uart_logging.c 
+	@-${MV} ${OBJECTDIR}/ECUL/uart_logging/uart_logging.d ${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/ECUL/uart_logging/uart_logging.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 

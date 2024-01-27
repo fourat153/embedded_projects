@@ -1,37 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F3132 `(v ~T0 @X0 0 tf ]
-"15 ./../mini_project smart home .X/ECUL/real_time_module/real_time.h
-[; ;./../mini_project smart home .X/ECUL/real_time_module/real_time.h: 15: {
-[s S307 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
-[n S307 . seconds minutes hours days months years ]
-[p mainexit ]
-"73 ./../mini_project smart home .X/ECUL/real_time_module/../../mcc_generated_files/mcc.h
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"7049 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h: 7049:     struct {
-[s S297 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S297 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
-"7059
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h: 7059:     struct {
-[s S298 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S298 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
-"7069
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h: 7069:     struct {
-[s S299 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S299 . . GIEL GIEH ]
-"7048
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h: 7048: typedef union {
-[u S296 `S297 1 `S298 1 `S299 1 ]
-[n S296 . . . . ]
-"7075
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h: 7075: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
-[v _INTCONbits `VS296 ~T0 @X0 0 e@4082 ]
-"28 ./../mini_project smart home .X/ECUL/real_time_module/real_time.h
-[; ;./../mini_project smart home .X/ECUL/real_time_module/real_time.h: 28: real_time_clock_t get_Real_time_clock (void) ;
-[v _get_Real_time_clock `(S307 ~T0 @X0 0 ef ]
-"29
-[; ;./../mini_project smart home .X/ECUL/real_time_module/real_time.h: 29: void print_realtimeclock(void);
-[v _print_realtimeclock `(v ~T0 @X0 0 ef ]
+"348 ECUL/uart_logging/../../mcc_generated_files/eusart.h
+[; ;ECUL/uart_logging/../../mcc_generated_files/eusart.h: 348: void EUSART_Write(uint8_t txData);
+[v _EUSART_Write `(v ~T0 @X0 0 ef1`uc ]
 "54 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h: 54: __asm("SSPMSK equ 0F77h");
 [; <" SSPMSK equ 0F77h ;# ">
@@ -473,51 +443,42 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7352
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h: 7352: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"213 ./../mini_project smart home .X/ECUL/real_time_module/../../mcc_generated_files/examples/../i2c_master.h
-[v _MSSP_InterruptHandler `*F3132 ~T0 @X0 1 e ]
-"47 main.c
-[; ;main.c: 47: real_time_clock_t real_time;
-[v _real_time `S307 ~T0 @X0 1 e ]
-[v $root$_main `(v ~T0 @X0 0 e ]
-"51
-[; ;main.c: 51: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
-"52
-[; ;main.c: 52: {
+"4 ECUL/uart_logging/uart_logging.c
+[; ;ECUL/uart_logging/uart_logging.c: 4: void uart_logging(uint8_t * string , int size )
+[v _uart_logging `(v ~T0 @X0 1 ef2`*uc`i ]
+"5
+[; ;ECUL/uart_logging/uart_logging.c: 5: {
 {
-[e :U _main ]
+[e :U _uart_logging ]
+"4
+[; ;ECUL/uart_logging/uart_logging.c: 4: void uart_logging(uint8_t * string , int size )
+[v _string `*uc ~T0 @X0 1 r1 ]
+[v _size `i ~T0 @X0 1 r2 ]
+"5
+[; ;ECUL/uart_logging/uart_logging.c: 5: {
 [f ]
-"54
-[; ;main.c: 54:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"61
-[; ;main.c: 61:     (INTCONbits.GIEH = 1);
-[e = . . _INTCONbits 2 2 -> -> 1 `i `uc ]
-"64
-[; ;main.c: 64:      (INTCONbits.GIEL = 1);
-[e = . . _INTCONbits 2 1 -> -> 1 `i `uc ]
-"73
-[; ;main.c: 73:     (INTCONbits.PEIE = 1);
-[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
-"78
-[; ;main.c: 78:     while (1)
-[e :U 310 ]
-"79
-[; ;main.c: 79:     {
+"6
+[; ;ECUL/uart_logging/uart_logging.c: 6:     for (int i = 0 ; i < size ; i++)
 {
-"81
-[; ;main.c: 81:         real_time = get_Real_time_clock();
-[e = _real_time ( _get_Real_time_clock ..  ]
-"82
-[; ;main.c: 82:         print_realtimeclock();
-[e ( _print_realtimeclock ..  ]
-"84
-[; ;main.c: 84:     }
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $U 309  ]
+[e :U 306 ]
+"7
+[; ;ECUL/uart_logging/uart_logging.c: 7:     {
+{
+"8
+[; ;ECUL/uart_logging/uart_logging.c: 8:         EUSART_Write(*string++);
+[e ( _EUSART_Write (1 *U ++ _string * -> -> 1 `i `x -> -> # *U _string `i `x ]
+"9
+[; ;ECUL/uart_logging/uart_logging.c: 9:     }
 }
+[e ++ _i -> 1 `i ]
 [e :U 309 ]
-[e $U 310  ]
-[e :U 311 ]
-"85
-[; ;main.c: 85: }
-[e :UE 308 ]
+[e $ < _i _size 306  ]
+[e :U 307 ]
+}
+"10
+[; ;ECUL/uart_logging/uart_logging.c: 10: }
+[e :UE 305 ]
 }

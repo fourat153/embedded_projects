@@ -42,7 +42,8 @@
 */
 
 #include "mcc_generated_files/mcc.h"
-#include "real_time_module/real_time.h"
+#include "../mini_project smart home .X/ECUL/real_time_module/real_time.h"
+#include "../mini_project smart home .X/ECUL/uart_logging/uart_logging.h"
 real_time_clock_t real_time; 
 /*
                          Main application
@@ -78,6 +79,8 @@ void main(void)
     {
         // Add your application code
         real_time = get_Real_time_clock();
+        print_realtimeclock();
+        //uart_logging(&real_time , 6);
     }
 }
 /**

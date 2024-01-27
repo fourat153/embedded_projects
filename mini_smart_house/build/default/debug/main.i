@@ -5273,10 +5273,10 @@ void SYSTEM_Initialize(void);
 void OSCILLATOR_Initialize(void);
 # 44 "main.c" 2
 
-# 1 "./real_time_module/real_time.h" 1
-# 12 "./real_time_module/real_time.h"
-# 1 "./real_time_module/../mcc_generated_files/examples/i2c_master_example.h" 1
-# 54 "./real_time_module/../mcc_generated_files/examples/i2c_master_example.h"
+# 1 "./../mini_project smart home .X/ECUL/real_time_module/real_time.h" 1
+# 11 "./../mini_project smart home .X/ECUL/real_time_module/real_time.h"
+# 1 "./../mini_project smart home .X/ECUL/real_time_module/../../mcc_generated_files/examples/i2c_master_example.h" 1
+# 54 "./../mini_project smart home .X/ECUL/real_time_module/../../mcc_generated_files/examples/i2c_master_example.h"
 uint8_t I2C_Read1ByteRegister(i2c_address_t address, uint8_t reg);
 uint16_t I2C_Read2ByteRegister(i2c_address_t address, uint8_t reg);
 void I2C_Write1ByteRegister(i2c_address_t address, uint8_t reg, uint8_t data);
@@ -5284,25 +5284,32 @@ void I2C_Write2ByteRegister(i2c_address_t address, uint8_t reg, uint16_t data);
 void I2C_WriteNBytes(i2c_address_t address, uint8_t *data, size_t len);
 void I2C_ReadNBytes(i2c_address_t address, uint8_t *data, size_t len);
 void I2C_ReadDataBlock(i2c_address_t address, uint8_t reg, uint8_t *data, size_t len);
-# 12 "./real_time_module/real_time.h" 2
+# 11 "./../mini_project smart home .X/ECUL/real_time_module/real_time.h" 2
+
+# 1 "./../mini_project smart home .X/ECUL/real_time_module/../uart_logging/uart_logging.h" 1
+# 12 "./../mini_project smart home .X/ECUL/real_time_module/../uart_logging/uart_logging.h"
+void uart_logging(uint8_t * string , int size ) ;
+# 12 "./../mini_project smart home .X/ECUL/real_time_module/real_time.h" 2
 
 
 typedef struct
 {
-    uint16_t seconds ;
-    uint16_t minutes ;
-    uint16_t hours ;
+    uint8_t seconds ;
+    uint8_t minutes ;
+    uint8_t hours ;
 
-    uint16_t days ;
-    uint16_t months ;
-    uint16_t years ;
+    uint8_t days ;
+    uint8_t months ;
+    uint8_t years ;
 
 
 }real_time_clock_t;
 
 
 real_time_clock_t get_Real_time_clock (void) ;
+void print_realtimeclock(void);
 # 45 "main.c" 2
+
 
 real_time_clock_t real_time;
 
@@ -5322,7 +5329,7 @@ void main(void)
 
 
      (INTCONbits.GIEL = 1);
-# 72 "main.c"
+# 73 "main.c"
     (INTCONbits.PEIE = 1);
 
 
@@ -5332,5 +5339,7 @@ void main(void)
     {
 
         real_time = get_Real_time_clock();
+        print_realtimeclock();
+
     }
 }

@@ -1400,8 +1400,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/i2c_master.c: 344:     I2C_Status.addressNackCheck = 1;
 [e = . _I2C_Status 9 -> -> 1 `i `uc ]
 "345
-[; ;mcc_generated_files/i2c_master.c: 345:     I2C_MasterSendTxData((uint8_t) (I2C_Status.address << 1 | 1));
-[e ( _I2C_MasterSendTxData (1 -> | << -> . _I2C_Status 4 `i -> 1 `i -> 1 `i `uc ]
+[; ;mcc_generated_files/i2c_master.c: 345:     I2C_MasterSendTxData((uint8_t) (I2C_Status.address | 1));
+[e ( _I2C_MasterSendTxData (1 -> | -> . _I2C_Status 4 `i -> 1 `i `uc ]
 "346
 [; ;mcc_generated_files/i2c_master.c: 346:     return I2C_RCEN;
 [e ) . `E3134 5 ]
@@ -1422,8 +1422,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/i2c_master.c: 351:     I2C_Status.addressNackCheck = 1;
 [e = . _I2C_Status 9 -> -> 1 `i `uc ]
 "352
-[; ;mcc_generated_files/i2c_master.c: 352:     I2C_MasterSendTxData((uint8_t) (I2C_Status.address << 1));
-[e ( _I2C_MasterSendTxData (1 -> << -> . _I2C_Status 4 `i -> 1 `i `uc ]
+[; ;mcc_generated_files/i2c_master.c: 352:     I2C_MasterSendTxData((uint8_t) (I2C_Status.address ));
+[e ( _I2C_MasterSendTxData (1 . _I2C_Status 4 ]
 "353
 [; ;mcc_generated_files/i2c_master.c: 353:     return I2C_TX;
 [e ) . `E3134 3 ]

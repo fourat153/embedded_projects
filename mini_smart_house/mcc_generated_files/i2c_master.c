@@ -342,14 +342,14 @@ static i2c_fsm_states_t I2C_DO_IDLE(void)
 static i2c_fsm_states_t I2C_DO_SEND_ADR_READ(void)
 {
     I2C_Status.addressNackCheck = 1;
-    I2C_MasterSendTxData((uint8_t) (I2C_Status.address << 1 | 1));
+    I2C_MasterSendTxData((uint8_t) (I2C_Status.address  | 1));
     return I2C_RCEN;
 }
 
 static i2c_fsm_states_t I2C_DO_SEND_ADR_WRITE(void)
 {
     I2C_Status.addressNackCheck = 1;
-    I2C_MasterSendTxData((uint8_t) (I2C_Status.address << 1));
+    I2C_MasterSendTxData((uint8_t) (I2C_Status.address ));
     return I2C_TX;
 }
 

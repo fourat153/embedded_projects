@@ -11,6 +11,8 @@
             <sourceRootList>
                 <sourceRootElem>real_time_clock</sourceRootElem>
                 <sourceRootElem>real_time_module</sourceRootElem>
+                <sourceRootElem>ECUL</sourceRootElem>
+                <sourceRootElem>uart_logging</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

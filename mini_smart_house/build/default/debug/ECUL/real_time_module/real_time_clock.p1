@@ -1,37 +1,15 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [v F3132 `(v ~T0 @X0 0 tf ]
-"15 ./../mini_project smart home .X/ECUL/real_time_module/real_time.h
-[; ;./../mini_project smart home .X/ECUL/real_time_module/real_time.h: 15: {
+"15 ECUL/real_time_module/../real_time_module/real_time.h
+[; ;ECUL/real_time_module/../real_time_module/real_time.h: 15: {
 [s S307 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
 [n S307 . seconds minutes hours days months years ]
-[p mainexit ]
-"73 ./../mini_project smart home .X/ECUL/real_time_module/../../mcc_generated_files/mcc.h
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"7049 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h: 7049:     struct {
-[s S297 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S297 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
-"7059
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h: 7059:     struct {
-[s S298 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S298 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
-"7069
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h: 7069:     struct {
-[s S299 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S299 . . GIEL GIEH ]
-"7048
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h: 7048: typedef union {
-[u S296 `S297 1 `S298 1 `S299 1 ]
-[n S296 . . . . ]
-"7075
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h: 7075: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
-[v _INTCONbits `VS296 ~T0 @X0 0 e@4082 ]
-"28 ./../mini_project smart home .X/ECUL/real_time_module/real_time.h
-[; ;./../mini_project smart home .X/ECUL/real_time_module/real_time.h: 28: real_time_clock_t get_Real_time_clock (void) ;
-[v _get_Real_time_clock `(S307 ~T0 @X0 0 ef ]
-"29
-[; ;./../mini_project smart home .X/ECUL/real_time_module/real_time.h: 29: void print_realtimeclock(void);
-[v _print_realtimeclock `(v ~T0 @X0 0 ef ]
+"54 ECUL/real_time_module/../../mcc_generated_files/examples/i2c_master_example.h
+[; ;ECUL/real_time_module/../../mcc_generated_files/examples/i2c_master_example.h: 54: uint8_t I2C_Read1ByteRegister(i2c_address_t address, uint8_t reg);
+[v _I2C_Read1ByteRegister `(uc ~T0 @X0 0 ef2`uc`uc ]
+"12 ECUL/real_time_module/../uart_logging/uart_logging.h
+[; ;ECUL/real_time_module/../uart_logging/uart_logging.h: 12: void uart_logging(uint8_t * string , int size ) ;
+[v _uart_logging `(v ~T0 @X0 0 ef2`*uc`i ]
 "54 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h: 54: __asm("SSPMSK equ 0F77h");
 [; <" SSPMSK equ 0F77h ;# ">
@@ -473,51 +451,111 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7352
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h: 7352: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"213 ./../mini_project smart home .X/ECUL/real_time_module/../../mcc_generated_files/examples/../i2c_master.h
+"213 ECUL/real_time_module/../../mcc_generated_files/examples/../i2c_master.h
 [v _MSSP_InterruptHandler `*F3132 ~T0 @X0 1 e ]
-"47 main.c
-[; ;main.c: 47: real_time_clock_t real_time;
-[v _real_time `S307 ~T0 @X0 1 e ]
-[v $root$_main `(v ~T0 @X0 0 e ]
-"51
-[; ;main.c: 51: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
-"52
-[; ;main.c: 52: {
+"3 ECUL/real_time_module/real_time_clock.c
+[; ;ECUL/real_time_module/real_time_clock.c: 3: static real_time_clock_t real_time;
+[v _real_time `S307 ~T0 @X0 1 s ]
+"4
+[; ;ECUL/real_time_module/real_time_clock.c: 4: static uint8_t pack_real_time[17] ;
+[v _pack_real_time `uc ~T0 @X0 -> 17 `i s ]
+"5
+[; ;ECUL/real_time_module/real_time_clock.c: 5: real_time_clock_t get_Real_time_clock (void)
+[v _get_Real_time_clock `(S307 ~T0 @X0 1 ef ]
+"6
+[; ;ECUL/real_time_module/real_time_clock.c: 6: {
 {
-[e :U _main ]
+[e :U _get_Real_time_clock ]
 [f ]
-"54
-[; ;main.c: 54:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"61
-[; ;main.c: 61:     (INTCONbits.GIEH = 1);
-[e = . . _INTCONbits 2 2 -> -> 1 `i `uc ]
-"64
-[; ;main.c: 64:      (INTCONbits.GIEL = 1);
-[e = . . _INTCONbits 2 1 -> -> 1 `i `uc ]
-"73
-[; ;main.c: 73:     (INTCONbits.PEIE = 1);
-[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
-"78
-[; ;main.c: 78:     while (1)
-[e :U 310 ]
-"79
-[; ;main.c: 79:     {
-{
-"81
-[; ;main.c: 81:         real_time = get_Real_time_clock();
-[e = _real_time ( _get_Real_time_clock ..  ]
-"82
-[; ;main.c: 82:         print_realtimeclock();
-[e ( _print_realtimeclock ..  ]
-"84
-[; ;main.c: 84:     }
-}
-[e :U 309 ]
-[e $U 310  ]
-[e :U 311 ]
-"85
-[; ;main.c: 85: }
+"7
+[; ;ECUL/real_time_module/real_time_clock.c: 7:     real_time.seconds = I2C_Read1ByteRegister( 0xD0, 0x0);
+[e = . _real_time 0 ( _I2C_Read1ByteRegister (2 , -> -> 208 `i `uc -> -> 0 `i `uc ]
+"8
+[; ;ECUL/real_time_module/real_time_clock.c: 8:     real_time.minutes = I2C_Read1ByteRegister(0xD0 , 0x1) ;
+[e = . _real_time 1 ( _I2C_Read1ByteRegister (2 , -> -> 208 `i `uc -> -> 1 `i `uc ]
+"9
+[; ;ECUL/real_time_module/real_time_clock.c: 9:     real_time.hours = I2C_Read1ByteRegister(0xD0 , 0x2) ;
+[e = . _real_time 2 ( _I2C_Read1ByteRegister (2 , -> -> 208 `i `uc -> -> 2 `i `uc ]
+"11
+[; ;ECUL/real_time_module/real_time_clock.c: 11:     real_time.days = I2C_Read1ByteRegister(0xD0 , 0x4) ;
+[e = . _real_time 3 ( _I2C_Read1ByteRegister (2 , -> -> 208 `i `uc -> -> 4 `i `uc ]
+"12
+[; ;ECUL/real_time_module/real_time_clock.c: 12:     real_time.months = I2C_Read1ByteRegister(0xD0 , 0x5) ;
+[e = . _real_time 4 ( _I2C_Read1ByteRegister (2 , -> -> 208 `i `uc -> -> 5 `i `uc ]
+"13
+[; ;ECUL/real_time_module/real_time_clock.c: 13:      real_time.years = I2C_Read1ByteRegister(0xD0 , 0x6) ;
+[e = . _real_time 5 ( _I2C_Read1ByteRegister (2 , -> -> 208 `i `uc -> -> 6 `i `uc ]
+"16
+[; ;ECUL/real_time_module/real_time_clock.c: 16:     return real_time ;
+[e ) _real_time ]
+[e $UE 308  ]
+"17
+[; ;ECUL/real_time_module/real_time_clock.c: 17: }
 [e :UE 308 ]
+}
+"19
+[; ;ECUL/real_time_module/real_time_clock.c: 19: void print_realtimeclock(void)
+[v _print_realtimeclock `(v ~T0 @X0 1 ef ]
+"20
+[; ;ECUL/real_time_module/real_time_clock.c: 20: {
+{
+[e :U _print_realtimeclock ]
+[f ]
+"21
+[; ;ECUL/real_time_module/real_time_clock.c: 21:     pack_real_time[0] = (real_time.years >> 4 ) + '0';
+[e = *U + &U _pack_real_time * -> -> -> 0 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> + -> >> -> . _real_time 5 `i -> 4 `i `ui -> 48 `ui `uc ]
+"22
+[; ;ECUL/real_time_module/real_time_clock.c: 22:     pack_real_time[1] = (real_time.years & 0x0F) + '0';
+[e = *U + &U _pack_real_time * -> -> -> 1 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> + -> & -> . _real_time 5 `i -> 15 `i `ui -> 48 `ui `uc ]
+"23
+[; ;ECUL/real_time_module/real_time_clock.c: 23:      pack_real_time[2] = '-';
+[e = *U + &U _pack_real_time * -> -> -> 2 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> -> 45 `ui `uc ]
+"24
+[; ;ECUL/real_time_module/real_time_clock.c: 24:     pack_real_time[3] = (real_time.months >> 4 ) + '0';
+[e = *U + &U _pack_real_time * -> -> -> 3 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> + -> >> -> . _real_time 4 `i -> 4 `i `ui -> 48 `ui `uc ]
+"25
+[; ;ECUL/real_time_module/real_time_clock.c: 25:     pack_real_time[4] = (real_time.months& 0x0F) + '0';
+[e = *U + &U _pack_real_time * -> -> -> 4 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> + -> & -> . _real_time 4 `i -> 15 `i `ui -> 48 `ui `uc ]
+"26
+[; ;ECUL/real_time_module/real_time_clock.c: 26:      pack_real_time[5] = '-';
+[e = *U + &U _pack_real_time * -> -> -> 5 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> -> 45 `ui `uc ]
+"27
+[; ;ECUL/real_time_module/real_time_clock.c: 27:     pack_real_time[6] = (real_time.days >> 4 ) + '0';
+[e = *U + &U _pack_real_time * -> -> -> 6 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> + -> >> -> . _real_time 3 `i -> 4 `i `ui -> 48 `ui `uc ]
+"28
+[; ;ECUL/real_time_module/real_time_clock.c: 28:      pack_real_time[7] = (real_time.days & 0x0F) + '0';
+[e = *U + &U _pack_real_time * -> -> -> 7 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> + -> & -> . _real_time 3 `i -> 15 `i `ui -> 48 `ui `uc ]
+"29
+[; ;ECUL/real_time_module/real_time_clock.c: 29:      pack_real_time[8] = ':';
+[e = *U + &U _pack_real_time * -> -> -> 8 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> -> 58 `ui `uc ]
+"30
+[; ;ECUL/real_time_module/real_time_clock.c: 30:     pack_real_time[9] = (real_time.hours >> 4 ) + '0';
+[e = *U + &U _pack_real_time * -> -> -> 9 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> + -> >> -> . _real_time 2 `i -> 4 `i `ui -> 48 `ui `uc ]
+"31
+[; ;ECUL/real_time_module/real_time_clock.c: 31:     pack_real_time[10] = (real_time.hours & 0x0F) + '0';
+[e = *U + &U _pack_real_time * -> -> -> 10 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> + -> & -> . _real_time 2 `i -> 15 `i `ui -> 48 `ui `uc ]
+"32
+[; ;ECUL/real_time_module/real_time_clock.c: 32:      pack_real_time[11] = '-';
+[e = *U + &U _pack_real_time * -> -> -> 11 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> -> 45 `ui `uc ]
+"33
+[; ;ECUL/real_time_module/real_time_clock.c: 33:     pack_real_time[12] = ( real_time.minutes >> 4 ) + '0';
+[e = *U + &U _pack_real_time * -> -> -> 12 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> + -> >> -> . _real_time 1 `i -> 4 `i `ui -> 48 `ui `uc ]
+"34
+[; ;ECUL/real_time_module/real_time_clock.c: 34:      pack_real_time[13] = (real_time.minutes & 0x0F) + '0';
+[e = *U + &U _pack_real_time * -> -> -> 13 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> + -> & -> . _real_time 1 `i -> 15 `i `ui -> 48 `ui `uc ]
+"35
+[; ;ECUL/real_time_module/real_time_clock.c: 35:      pack_real_time[14] = '-';
+[e = *U + &U _pack_real_time * -> -> -> 14 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> -> 45 `ui `uc ]
+"36
+[; ;ECUL/real_time_module/real_time_clock.c: 36:     pack_real_time[15] = (real_time.seconds >> 4 ) + '0';
+[e = *U + &U _pack_real_time * -> -> -> 15 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> + -> >> -> . _real_time 0 `i -> 4 `i `ui -> 48 `ui `uc ]
+"37
+[; ;ECUL/real_time_module/real_time_clock.c: 37:     pack_real_time[16] = (real_time.seconds & 0x0F) + '0';
+[e = *U + &U _pack_real_time * -> -> -> 16 `i `ui `ux -> -> # *U &U _pack_real_time `ui `ux -> + -> & -> . _real_time 0 `i -> 15 `i `ui -> 48 `ui `uc ]
+"38
+[; ;ECUL/real_time_module/real_time_clock.c: 38:     uart_logging(pack_real_time , 17) ;
+[e ( _uart_logging (2 , &U _pack_real_time -> 17 `i ]
+"39
+[; ;ECUL/real_time_module/real_time_clock.c: 39: }
+[e :UE 309 ]
 }
