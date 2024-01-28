@@ -18,8 +18,8 @@ real_time_clock_t get_Real_time_clock (void)
 
 void print_realtimeclock(void) 
 {
-    pack_real_time[0] =  (real_time.years >> 4 ) + '0';
-    pack_real_time[1] =  (real_time.years & 0x0F) + '0';
+    pack_real_time[0] =  (real_time.years >> 4 ) + '0'; // exmple : 18 in bin : 00011000 turn it into caractar by adding '0' 
+    pack_real_time[1] =  (real_time.years & 0x0F) + '0';  // extract the first 4 bit 
      pack_real_time[2] =  '-';
     pack_real_time[3] =  (real_time.months >> 4 ) + '0';
     pack_real_time[4] =  (real_time.months& 0x0F) + '0';
